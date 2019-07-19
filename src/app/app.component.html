@@ -1,0 +1,60 @@
+<div class="container pizza">
+  <div class="row pizza-menu">
+    <div class="menu">PIZZA</div>
+  </div>
+  <div class="row pizza-detail">
+    <table class="table">
+      <tr>
+        <td class="text-align"><img src="../assets/image/pizza-slice.png" alt="Smiley face" height="25" width="25"></td>
+        <td>Small</td>
+        <td><a [ngClass]="(nagative==false)?'disabled':''" href="javascript:void(0);" (click)="clickMinus('small')">
+            <span class="glyphicon glyphicon-minus"></span></a></td>
+        <td>{{small}}</td>
+        <td><a [ngClass]="(postive==false)?'disabled':''" href="javascript:void(0);" (click)="clickPositive('small')">
+            <span class="glyphicon glyphicon-plus"></span></a></td>
+      </tr>
+      <tr>
+          <td class="text-align"><img src="../assets/image/pizza-slice.png" alt="Smiley face" height="32" width="32"></td>
+        <td>Medium</td>
+        <td><a [ngClass]="(nagative==false)?'disabled':''" href="javascript:void(0);" (click)="clickMinus('medium')">
+            <span class="glyphicon glyphicon-minus"></span></a></td>
+        <td>{{medium}}</td>
+        <td><a [ngClass]="(postive==false)?'disabled':''" href="javascript:void(0);" (click)="clickPositive('medium')">
+            <span class="glyphicon glyphicon-plus"></span></a></td>
+      </tr>
+      <tr>
+        <td class="text-align"><img src="../assets/image/pizza-slice.png" alt="Smiley face" height="39" width="39"></td>
+        <td>Large</td>
+        <td><a [ngClass]="(nagative==false)?'disabled':''" href="javascript:void(0);" (click)="clickMinus('large')">
+            <span class="glyphicon glyphicon-minus"></span></a></td>
+        <td>{{large}}</td>
+        <td><a [ngClass]="(postive==false)?'disabled':''" href="javascript:void(0);" (click)="clickPositive('large')">
+            <span class="glyphicon glyphicon-plus"></span></a></td>
+      </tr>
+      <tr>
+          <td class="text-align"><img src="../assets/image/boss.png" alt="Smiley face" height="32" width="32"></td>
+        <td>Adult</td>
+        <td><a [ngClass]="(nagative==false)?'disabled':''" href="javascript:void(0);" (click)="clickMinus('adult')">
+            <span class="glyphicon glyphicon-minus"></span></a></td>
+        <td>{{adult}}</td>
+        <td><a [ngClass]="(postive==false)?'disabled':''" href="javascript:void(0);" (click)="clickPositive('adult')">
+            <span class="glyphicon glyphicon-plus"></span></a></td>
+      </tr>
+      <tr>
+        <td class="text-align"><img src="../assets/image/boy.png" alt="Smiley face" height="32" width="32"></td>
+        <td>Children </td>
+        <td><a [ngClass]="(nagative==false)?'disabled':''" href="javascript:void(0);" (click)="clickMinus('children')">
+            <span class="glyphicon glyphicon-minus"></span></a></td>
+        <td>{{children}}</td>
+        <td><a [ngClass]="(postive==false)?'disabled':''" href="javascript:void(0);"
+            (click)="clickPositive('children')"> <span class="glyphicon glyphicon-plus"></span></a></td>
+      </tr>
+      <tr >
+        <td></td>
+        <td >Order <strong>Total</strong></td>
+        <td></td>
+        <td   colspan="5"> {{total}}</td>
+      </tr>
+    </table>
+  </div>
+</div>
